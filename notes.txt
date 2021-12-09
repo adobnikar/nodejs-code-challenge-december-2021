@@ -1,0 +1,4 @@
+# Initialize typescript project with:
+npx tsc --init --sourceMap --rootDir src --outDir dist
+
+Check out "koa-helmet", @koa/cors, typeorm, reflect-metadata, winston

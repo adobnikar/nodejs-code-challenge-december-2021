@@ -1,2 +1,3 @@
-# nodejs-code-challenge-december-2021
+# Node.js code challenge
+
 Node.js code challenge

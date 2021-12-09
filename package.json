@@ -1,0 +1,32 @@
+{
+  "name": "nodejs-code-challenge-december-2021",
+  "private": true,
+  "version": "1.0.0",
+  "description": "Node.js code challenge",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/adobnikar/nodejs-code-challenge-december-2021.git"
+  },
+  "keywords": [
+    "Node.js",
+    "challenge"
+  ],
+  "author": "Andraž Dobnikar <andraz.dobnikar@hotmail.com>",
+  "bugs": {
+    "url": "https://github.com/adobnikar/nodejs-code-challenge-december-2021/issues"
+  },
+  "homepage": "https://github.com/adobnikar/nodejs-code-challenge-december-2021#readme",
+  "dependencies": {
+    "koa": "^2.13.4",
+    "koa-router": "^10.1.1"
+  },
+  "devDependencies": {
+    "@types/koa": "^2.13.4",
+    "@types/koa-router": "^7.4.4",
+    "typescript": "^4.5.2"
+  }
+}
