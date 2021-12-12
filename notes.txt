@@ -1,4 +1,33 @@
+Good sources:
+- https://cloudnweb.dev/2019/09/building-a-production-ready-node-js-app-with-typescript-and-docker/
+
 # Initialize typescript project with:
 npx tsc --init --sourceMap --rootDir src --outDir dist
 
+target - it can be either ES6 or ES5, based on the options, TypeScript compiles the code either to ES6 or ES5.
+outDir - it specifies the directory where the compiled code will be stored.
+rootDir - it specifies the directory on which the typescript code will be.
+moduleResolution - specifies the module resolution strategy
+
 Check out "koa-helmet", @koa/cors, typeorm, reflect-metadata, winston
+
+TODO:
+- google knex with typescript
+- check out nuxt.js framework
+- check out jest testing framework
+
+Docker compose file Version 3.8 - An upgrade of version 3 that introduces new parameters. It is only available with Docker Engine version 19.03.0 and higher.
+
+
+Docker compose commands:
+
+docker-compose build --no-cache
+docker-compose up -d
+docker-compose -f docker-compose.db.yml up -d
+docker-compose -f docker-compose.yml -f docker-compose.prod.yml up -d
+
+
+Other links:
+
+https://dev.to/dariansampare/setting-up-docker-typescript-node-hot-reloading-code-changes-in-a-running-container-2b2f
+https://towardsdev.com/writing-a-docker-file-for-your-node-js-typescript-micro-service-c5170b957893 (this one uses node user)
