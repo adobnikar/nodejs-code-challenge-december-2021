@@ -12,6 +12,8 @@ WORKDIR /app
 COPY package.json ./
 COPY package-lock.json ./
 COPY .env ./
+COPY knexfile.js ./
+COPY knex ./knex
 COPY --from=builder /app/dist ./dist
 RUN npm install --only=production
 RUN npm install pm2 -g

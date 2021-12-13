@@ -14,7 +14,7 @@ Check out "koa-helmet", @koa/cors, typeorm, reflect-metadata, winston
 TODO:
 - google knex with typescript
 - check out nuxt.js framework
-- check out jest testing framework
+- check out jest, chai, mocha testing framework
 
 Docker compose file Version 3.8 - An upgrade of version 3 that introduces new parameters. It is only available with Docker Engine version 19.03.0 and higher.
 
@@ -31,3 +31,8 @@ Other links:
 
 https://dev.to/dariansampare/setting-up-docker-typescript-node-hot-reloading-code-changes-in-a-running-container-2b2f
 https://towardsdev.com/writing-a-docker-file-for-your-node-js-typescript-micro-service-c5170b957893 (this one uses node user)
+
+Knex commands:
+npm run knex migrate:make create_drugs_table
+npm run knex seed:make seed_drugs_table
+npm run knex migrate:latest
