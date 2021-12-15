@@ -19,6 +19,8 @@ docker-compose up -d
 After the `docker-compose up -d` command finishes, the server should be available on `http://127.0.0.1:13000/`.
 The postgres database should be running on port `45432`.
 
+The only implemented API endpoint is the health check endpoint. It should be available at `http://127.0.0.1:13000/health`.
+
 All the ports listed in the `.env` file are internal to the docker containers.
 If you want to change the external ports, please modify the `docker-compose.yml` file accordingly.
 
@@ -80,6 +82,8 @@ npm start
 
 or debug the application with the help of the VS Code launch system (https://code.visualstudio.com/docs/editor/debugging).
 The launch commands are specified in the `.vscode/launch.json` file.
+
+The only implemented API endpoint is the health check endpoint. It should be available at `http://127.0.0.1:3000/health`.
 
 Stop the database container when it is not needed anymore
 ```bash
