@@ -1,6 +1,8 @@
 'use strict';
 
 exports.seed = async function(knex) {
+	let firstDrug = await knex('drugs').select(['id']).first();
+	if (firstDrug) return;
 	await knex('drugs').insert([
 		{
 			"slug": "aspirin",

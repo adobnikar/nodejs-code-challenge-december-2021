@@ -36,3 +36,4 @@ Knex commands:
 npm run knex migrate:make create_drugs_table
 npm run knex seed:make seed_drugs_table
 npm run knex migrate:latest
+npm run knex seed:run
