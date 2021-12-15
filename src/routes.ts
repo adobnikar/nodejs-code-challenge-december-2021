@@ -10,7 +10,7 @@ const AuthMiddleware = require('./middleware/auth');
 
 // Require all exposed controllers.
 const HealthController = require('./controllers/health');
-const UserController = require('./controllers/user');
+// const UserController = require('./controllers/user');
 
 // Create koa router instance.
 let router = new KoaRouter({
@@ -50,8 +50,8 @@ router.pushMiddleware('body');
 router.get('health', '/health', HealthController.health);
 
 // Users.
-router.post('users.store', '/user/register', UserController.store);
-router.post('users.login', '/user/login', UserController.login);
+// router.post('users.store', '/user/register', UserController.store);
+// router.post('users.login', '/user/login', UserController.login);
 
 /**
  * Apply routes middleware function.
